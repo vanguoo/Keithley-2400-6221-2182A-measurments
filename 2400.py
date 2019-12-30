@@ -16,25 +16,30 @@ instr24 = rm.open_resource('GPIB0::24::INSTR')
 def initial_csv_62():
     feildname = ['voltage','current','res','timestamp','statucode']
     directory = input('****please input your directory: ***\n*****please make sure the directory does exists\n')
-    temp = time.ctime().replace(' ','_')
-    filename6 = temp.replace(':','_')
-    filename6 = '{}/{}.csv'.format(directory,filename6)
+    # temp = time.ctime().replace(' ','_')
+    # filename6 = temp.replace(':','_')
+    filename6 = '{}.csv'.format(directory)
     with open('%s' % filename6,'w') as file2:
         csv_writer = csv.DictWriter(file2,fieldnames=feildname)
         csv_writer.writeheader()
     return filename6
 
-def pluse_2400_self(high_curr1 = -4e-9):
+def pluse_2400_self(high_curr1 = -5e-9):
     
-    i=20
+    i=30
     high_curr = str(high_curr1)
     temp2 = 0
     temp1 = 0
+    rate = 0
+    rate1 = 0
+    count = 0
+    count1 = 0
     instr24.write(':outp on')
     while i:
-        j = temp2 + 15
+        j = temp2 + 40
+        start_low = time.perf_counter()
         while j:
-            start_low = time.perf_counter()
+           
             instr24.write('sour:curr:lev 0.0000000')
             # instr24.write('init')
             temp4=instr24.query(':read?').split(',')
@@ -43,13 +48,20 @@ def pluse_2400_self(high_curr1 = -4e-9):
             with open('%s' % filename,'a') as file3:
                 file3.write(data_low)
             j -=1
-            stop_low = time.perf_counter()
-            print(f'low time is {stop_low-start_low}')
-        # temp2 +=8
+        count +=1
+        stop_low = time.perf_counter()
+        print(f'low time is {stop_low-start_low}')
+        temp2 += rate
+        print(count)
+        if count == 1:
+            rate +=0
+        rate +=40
         
-        w = temp1 + 15
+
+        w = temp1 + 40
+        start_low1 = time.perf_counter()
         while w:
-            start_low1 = time.perf_counter()
+            
             instr24.write('sour:curr:lev %s ' % high_curr)
             # instr24.write('init')
             temp = instr24.query(':read?').split(',')
@@ -59,10 +71,14 @@ def pluse_2400_self(high_curr1 = -4e-9):
             with open('%s' % filename,'a') as file4:
                 file4.write(data_hig)
             w -=1
+        count1 +=1
+        stop_low1 = time.perf_counter()
+        print(f'high time is {stop_low1-start_low1}')
+        temp1 += rate1
+        if count1==1:
+            rate1 += 0
+        rate1 +=40
 
-            stop_low1 = time.perf_counter()
-            print(f'high time is {stop_low1-start_low1}')
-        # temp1 +=8
         i -=1
         print(i)
     instr24.write(':outp off')
