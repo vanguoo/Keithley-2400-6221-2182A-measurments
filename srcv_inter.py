@@ -6,7 +6,8 @@ from SourceV_MeasureI import *
 class window(QWidget,Ui_srcv):
     #初始化一个存放 参数的数组 长度为9
     args = [None for _ in range(9)]
-    emit_confirm = pyqtSignal()
+    emit_switching1 = pyqtSignal()
+    emit_switching = pyqtSignal()
     emit_start =  pyqtSignal()
     emit_stop = pyqtSignal()
 
@@ -15,19 +16,25 @@ class window(QWidget,Ui_srcv):
         self.setWindowTitle('source v measure i')
         self.setupUi(self)
 
+    @pyqtSlot(bool)
+    def on_radioButton_toggled(self,bool):
+        if bool:
+            print('switching... source i mode')
+            self.emit_switching.emit()
+        else:
+            print('source v mode')
+            self.emit_switching1.emit()
+
+
+    
+    # @pyqtSlot()
+    # def on_radioButton_released(self):
+    #     print('source i')
+
     @pyqtSlot()
     def on_start_clicked(self):
         
         self.emit_start.emit()
-    
-    @pyqtSlot()
-    def on_confirm_clicked(self):
-        
-        
-        self.start.setEnabled(True)
-        self.emit_confirm.emit()
-        # print(self.args)
-
     
     @pyqtSlot()
     def on_stop_clicked(self):
@@ -37,22 +44,22 @@ class window(QWidget,Ui_srcv):
     @pyqtSlot()
     def on_high_editingFinished(self):
         self.args[2] = self.high.text()
-        print(self.args)
+        
 
     @pyqtSlot()
     def on_low_editingFinished(self):
         self.args[3] = self.low.text()
-        print(self.args)
+        
 
     @pyqtSlot()
     def on_width_editingFinished(self):
         self.args[4] = self.width.text()
-        print(self.args)
+        
     
     @pyqtSlot()
     def on_compliance_editingFinished(self):
         self.args[5] = self.compliance.text()
-        print(self.args)
+        
     
     @pyqtSlot()
     def on_dir_editingFinished(self):
@@ -72,16 +79,15 @@ class window(QWidget,Ui_srcv):
         
         self.args[7] = self.rate.text()
     
-    
-    
-    
-    
-def test():
-    initial_csv_62(window.args[0],window.args[1])
-    pluse_2400_self(window.args[2],window.args[3],window.args[4],window.args[5],window.args[6],window.args[7])
-    
+def switching_srci():
+    print('here pass the source i args')
+
+def switching_srcv():
+    print('here pass the source v args')
 
 def start():
+    initial_csv_62(window.args[0],window.args[1])
+    pluse_2400_self(window.args[2],window.args[3],window.args[4],window.args[5],window.args[6],window.args[7])
     go()
 
 def stop():
@@ -94,9 +100,11 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     win = window()
     
-    win.emit_confirm.connect(test)
+    
     win.emit_start.connect(start)
     win.emit_stop.connect(stop)
+    win.emit_switching.connect(switching_srci)
+    win.emit_switching1.connect(switching_srcv)
     
     win.show()
     sys.exit(app.exec_())
