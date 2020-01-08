@@ -9,6 +9,7 @@ import multiprocessing
 filename = None
 ax1 = None
 t2 = None
+t1 = None
 
 def animate(i):
     data = pd.read_csv(filename)
@@ -32,6 +33,7 @@ def plot(file):
 
 def go():
     global t2
+    global t1
     filename = init_csv()
     t1 = multiprocessing.Process(target=num_gen,args=(filename,))
     t2 = multiprocessing.Process(target=plot,args=(filename,))

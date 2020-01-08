@@ -2,6 +2,10 @@ from SRC_V import Ui_srcv
 from PyQt5.Qt import *
 from plot import *
 from SourceV_MeasureI import *
+from multiprocessing import Process
+
+t_2400 = None
+t_plot = None
 
 class window(QWidget,Ui_srcv):
     #初始化一个存放 参数的数组 长度为9
@@ -86,13 +90,21 @@ def switching_srcv():
     print('here pass the source v args')
 
 def start():
-    filename = initial_csv_62(window.args[0],window.args[1])
-    pluse_2400_self(window.args[2],window.args[3],window.args[4],window.args[5],window.args[6],window.args[7])
-    go()
+    global t_2400
+    global t_plot
+    
+    filename1 = initial_csv_62(window.args[0],window.args[1])
+    t_2400 = Process(target=pluse_2400_self,args=(filename1,window.args[2],window.args[3],window.args[4],window.args[5],window.args[6],window.args[7],))
+    t_plot = Process(target=plot_24,args=(filename1,))
+    t_2400.start()
+    t_plot.start()
+    
+    # go()
 
 def stop():
-
-    thread_kill()
+    t_2400.terminate()
+    t_plot.terminate()
+    # thread_kill()
     
 
 if __name__ == "__main__":
