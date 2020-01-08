@@ -19,10 +19,10 @@ class window(QWidget,Ui_srcv):
     @pyqtSlot(bool)
     def on_radioButton_toggled(self,bool):
         if bool:
-            print('switching... source i mode')
+            
             self.emit_switching.emit()
         else:
-            print('source v mode')
+            
             self.emit_switching1.emit()
 
 
@@ -86,7 +86,7 @@ def switching_srcv():
     print('here pass the source v args')
 
 def start():
-    initial_csv_62(window.args[0],window.args[1])
+    filename = initial_csv_62(window.args[0],window.args[1])
     pluse_2400_self(window.args[2],window.args[3],window.args[4],window.args[5],window.args[6],window.args[7])
     go()
 

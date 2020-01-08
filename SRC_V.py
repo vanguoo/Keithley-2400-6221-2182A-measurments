@@ -101,6 +101,17 @@ class Ui_srcv(object):
 
         self.retranslateUi(srcv)
         QtCore.QMetaObject.connectSlotsByName(srcv)
+        srcv.setTabOrder(self.radioButton, self.dir)
+        srcv.setTabOrder(self.dir, self.filename)
+        srcv.setTabOrder(self.filename, self.high)
+        srcv.setTabOrder(self.high, self.low)
+        srcv.setTabOrder(self.low, self.width)
+        srcv.setTabOrder(self.width, self.compliance)
+        srcv.setTabOrder(self.compliance, self.period)
+        srcv.setTabOrder(self.period, self.rate)
+        srcv.setTabOrder(self.rate, self.start)
+        srcv.setTabOrder(self.start, self.stop)
+        srcv.setTabOrder(self.stop, self.tips)
 
     def retranslateUi(self, srcv):
         _translate = QtCore.QCoreApplication.translate

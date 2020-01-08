@@ -233,6 +233,20 @@
    </property>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>radioButton</tabstop>
+  <tabstop>dir</tabstop>
+  <tabstop>filename</tabstop>
+  <tabstop>high</tabstop>
+  <tabstop>low</tabstop>
+  <tabstop>width</tabstop>
+  <tabstop>compliance</tabstop>
+  <tabstop>period</tabstop>
+  <tabstop>rate</tabstop>
+  <tabstop>start</tabstop>
+  <tabstop>stop</tabstop>
+  <tabstop>tips</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>
