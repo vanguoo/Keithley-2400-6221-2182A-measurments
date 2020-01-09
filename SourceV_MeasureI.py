@@ -24,14 +24,13 @@ def initial_csv_62(directory,filename):
         csv_writer.writeheader()
     return filename_
 
-def pluse_2400_self(filename1,high=1e-3,low=0,width=20,compliance=1,period=10,increasing=0):
-    print(high,low,width,compliance,period,increasing)
-    print(filename1)
+def pluse_2400_self(src_func,sens_func,filename1,high=1e-3,low=0,width=20,compliance=1,period=10,increasing=0):
+    print(src_func,sens_func)
     
     instr24.write('*rst')
-    instr24.write(':sour:func volt')
-    instr24.write(':sens:curr:prot %s' % compliance)
-    instr24.write(':sens:func "curr"')
+    instr24.write(':sour:func %s' % src_func)
+    instr24.write(':sens:{}:prot {}'.format(sens_func,compliance))
+    instr24.write(':sens:func "{}"'.format(sens_func))
     instr24.write(':aver:coun 1')
     instr24.write(':sour:del 0')
 
@@ -49,7 +48,7 @@ def pluse_2400_self(filename1,high=1e-3,low=0,width=20,compliance=1,period=10,in
         start_low = time.perf_counter()
         while j:
             
-            instr24.write('sour:volt:lev %s' % low)
+            instr24.write('sour:{}:lev {}'.format(src_func,low))
             # instr24.write('init')
             temp4=instr24.query(':read?').split(',')
             temp4[2] = str(0)
@@ -58,11 +57,12 @@ def pluse_2400_self(filename1,high=1e-3,low=0,width=20,compliance=1,period=10,in
                 file3.write(data_low)
             j -=1
             
+            
         count +=1
         stop_low = time.perf_counter()
         print(f'low time is {stop_low-start_low}')
         temp2 += rate
-        print(count)
+        
         if count == 1:
             rate +=0
         rate += int(increasing)
@@ -70,9 +70,10 @@ def pluse_2400_self(filename1,high=1e-3,low=0,width=20,compliance=1,period=10,in
 
         w = temp1 + int(width)
         start_low1 = time.perf_counter()
+        
         while w:
             
-            instr24.write('sour:volt:lev %s ' % high)
+            instr24.write('sour:{}:lev {}'.format(src_func,high))
             # instr24.write('init')
             temp = instr24.query(':read?').split(',')
             resistance = float(temp[0])/float(temp[1])
@@ -91,7 +92,7 @@ def pluse_2400_self(filename1,high=1e-3,low=0,width=20,compliance=1,period=10,in
         rate1 += int(increasing)
 
         i -=1
-        print(i)
+        print('period remain:{}'.format(i))
     instr24.write(':outp off')
 
 
@@ -134,8 +135,7 @@ def main():
     t_plot.start()
 
 def stop_process():
-    t_2400.terminate()
-    t_plot.terminate()
+    instr24.write(':outp off')
     
 
 if __name__ == "__main__":

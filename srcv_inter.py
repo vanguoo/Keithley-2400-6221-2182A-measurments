@@ -3,13 +3,14 @@ from PyQt5.Qt import *
 from plot import *
 from SourceV_MeasureI import *
 from multiprocessing import Process
+import visa
 
 t_2400 = None
 t_plot = None
 
 class window(QWidget,Ui_srcv):
     #初始化一个存放 参数的数组 长度为9
-    args = [None for _ in range(9)]
+    args = [None for _ in range(10)]
     emit_switching1 = pyqtSignal()
     emit_switching = pyqtSignal()
     emit_start =  pyqtSignal()
@@ -19,11 +20,18 @@ class window(QWidget,Ui_srcv):
         super().__init__()
         self.setWindowTitle('source v measure i')
         self.setupUi(self)
+        self.args[8] = "volt"
+        self.args[9] = "curr"
+        print('here is source volt mode')
+        rm = visa.ResourceManager('@py')
+        instr24 = rm.open_resource('GPIB0::24::INSTR')
+        instr24.write('*rst')
 
     @pyqtSlot(bool)
     def on_radioButton_toggled(self,bool):
         if bool:
-            
+            # args[8] = src_func  args[9] = sens_func
+
             self.emit_switching.emit()
         else:
             
@@ -84,17 +92,22 @@ class window(QWidget,Ui_srcv):
         self.args[7] = self.rate.text()
     
 def switching_srci():
-    print('here pass the source i args')
+    window.args[8] = "curr"
+    window.args[9] = "volt"
+    print('here is source current mode')
 
 def switching_srcv():
-    print('here pass the source v args')
+    #defult is src_volt
+    window.args[8] = "volt"
+    window.args[9] = "curr"
+    print('here is source voltage mode ')
 
 def start():
     global t_2400
     global t_plot
-    
+    print('initializing...')
     filename1 = initial_csv_62(window.args[0],window.args[1])
-    t_2400 = Process(target=pluse_2400_self,args=(filename1,window.args[2],window.args[3],window.args[4],window.args[5],window.args[6],window.args[7],))
+    t_2400 = Process(target=pluse_2400_self,args=(window.args[8],window.args[9],filename1,window.args[2],window.args[3],window.args[4],window.args[5],window.args[6],window.args[7],))
     t_plot = Process(target=plot_24,args=(filename1,))
     t_2400.start()
     t_plot.start()
@@ -104,6 +117,7 @@ def start():
 def stop():
     t_2400.terminate()
     t_plot.terminate()
+    stop_process()
     # thread_kill()
     
 
