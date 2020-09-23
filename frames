@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-09-23T08:55:06.592Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36" etag="LaFER8CElpJpNGdHyVn2" version="13.6.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-09-23T12:16:53.305Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36" etag="SN0TTGdZsS0MMHp5UjnT" version="13.6.9" type="github" pages="2">
   <diagram id="uIDV079HKunsfSjdAMV2" name="Page-1">
-    <mxGraphModel dx="786" dy="442" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1123" dy="701" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -135,6 +135,29 @@
         </mxCell>
         <mxCell id="jeOk1xndO2Uc1EoSfwOA-71" value="Client" style="whiteSpace=wrap;html=1;rounded=0;shadow=0;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#21C0A5;glass=0;sketch=0;" vertex="1" parent="1">
           <mxGeometry x="113" y="620" width="77" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="vXbBu7Sqp_FxfUvee8l9" name="Page-2">
+    <mxGraphModel dx="786" dy="491" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="WgefTIiT7AgqmnGOStk_-0" />
+        <mxCell id="WgefTIiT7AgqmnGOStk_-1" parent="WgefTIiT7AgqmnGOStk_-0" />
+        <mxCell id="T5qcQMU3wxrCcpjOejp2-2" value="" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" edge="1" parent="WgefTIiT7AgqmnGOStk_-1" source="T5qcQMU3wxrCcpjOejp2-0" target="T5qcQMU3wxrCcpjOejp2-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T5qcQMU3wxrCcpjOejp2-0" value="Client" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" vertex="1" parent="WgefTIiT7AgqmnGOStk_-1">
+          <mxGeometry x="100" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="T5qcQMU3wxrCcpjOejp2-4" value="" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" edge="1" parent="WgefTIiT7AgqmnGOStk_-1" source="T5qcQMU3wxrCcpjOejp2-1" target="T5qcQMU3wxrCcpjOejp2-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T5qcQMU3wxrCcpjOejp2-1" value="HTTP Request" style="whiteSpace=wrap;html=1;rounded=1;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#21C0A5;sketch=0;" vertex="1" parent="WgefTIiT7AgqmnGOStk_-1">
+          <mxGeometry x="300" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="T5qcQMU3wxrCcpjOejp2-3" value="Web Server&lt;br&gt;www.xxx.com" style="whiteSpace=wrap;html=1;rounded=1;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#21C0A5;sketch=0;" vertex="1" parent="WgefTIiT7AgqmnGOStk_-1">
+          <mxGeometry x="500" y="160" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
