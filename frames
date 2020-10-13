@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-13T07:30:37.295Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" etag="Jn6aJfrU6rSwPYYvBvwd" version="13.7.5" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-10-13T07:38:46.850Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" etag="09RycTzPXDuQM37qBG1y" version="13.7.5" type="github" pages="4">
   <diagram id="uIDV079HKunsfSjdAMV2" name="whole">
     <mxGraphModel dx="750" dy="602" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -124,15 +124,15 @@
     </mxGraphModel>
   </diagram>
   <diagram id="5k5eqYXZuMANmjEpggOU" name="IaaS">
-    <mxGraphModel dx="750" dy="602" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="779" dy="760" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="epv-3wkFZTkjs20L-b3g-0" />
         <mxCell id="epv-3wkFZTkjs20L-b3g-1" parent="epv-3wkFZTkjs20L-b3g-0" />
         <mxCell id="epv-3wkFZTkjs20L-b3g-2" value="INSTRUMENTS" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;" vertex="1" parent="epv-3wkFZTkjs20L-b3g-1">
           <mxGeometry x="70" y="260" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="epv-3wkFZTkjs20L-b3g-4" value="SERVER" style="whiteSpace=wrap;html=1;rounded=0;sketch=0;" vertex="1" parent="epv-3wkFZTkjs20L-b3g-1">
-          <mxGeometry x="460" y="529" width="160" height="91" as="geometry" />
+        <mxCell id="epv-3wkFZTkjs20L-b3g-4" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;SERVER" style="whiteSpace=wrap;html=1;rounded=0;sketch=0;align=left;" vertex="1" parent="epv-3wkFZTkjs20L-b3g-1">
+          <mxGeometry x="460" y="529" width="200" height="91" as="geometry" />
         </mxCell>
         <mxCell id="epv-3wkFZTkjs20L-b3g-6" value="INSTRUMENTS" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;" vertex="1" parent="epv-3wkFZTkjs20L-b3g-1">
           <mxGeometry x="70" y="340" width="120" height="60" as="geometry" />
@@ -223,7 +223,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="epv-3wkFZTkjs20L-b3g-51" value="router" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;fillColor=none;" vertex="1" parent="epv-3wkFZTkjs20L-b3g-1">
+        <mxCell id="epv-3wkFZTkjs20L-b3g-51" value="Router" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;fillColor=none;" vertex="1" parent="epv-3wkFZTkjs20L-b3g-1">
           <mxGeometry x="580" y="379" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="epv-3wkFZTkjs20L-b3g-52" value="LAN" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;" vertex="1" parent="epv-3wkFZTkjs20L-b3g-1">
@@ -241,6 +241,9 @@
         <mxCell id="epv-3wkFZTkjs20L-b3g-55" value="WAN" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;" vertex="1" parent="epv-3wkFZTkjs20L-b3g-1">
           <mxGeometry x="560" y="359" width="40" height="20" as="geometry" />
         </mxCell>
+        <mxCell id="woMwBa5ag-BGhzqxOsRd-0" value="Database" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;rounded=0;sketch=0;fillColor=none;" vertex="1" parent="epv-3wkFZTkjs20L-b3g-1">
+          <mxGeometry x="570" y="544.5" width="70" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
@@ -253,24 +256,12 @@
     </mxGraphModel>
   </diagram>
   <diagram id="vXbBu7Sqp_FxfUvee8l9" name="Page-2">
-    <mxGraphModel dx="750" dy="602" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
+    <mxGraphModel dx="750" dy="659" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
         <mxCell id="WgefTIiT7AgqmnGOStk_-0" />
         <mxCell id="WgefTIiT7AgqmnGOStk_-1" parent="WgefTIiT7AgqmnGOStk_-0" />
-        <mxCell id="T5qcQMU3wxrCcpjOejp2-2" value="" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" parent="WgefTIiT7AgqmnGOStk_-1" source="T5qcQMU3wxrCcpjOejp2-0" target="T5qcQMU3wxrCcpjOejp2-1" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="T5qcQMU3wxrCcpjOejp2-0" value="Client" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" parent="WgefTIiT7AgqmnGOStk_-1" vertex="1">
-          <mxGeometry x="100" y="160" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="T5qcQMU3wxrCcpjOejp2-4" value="" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" parent="WgefTIiT7AgqmnGOStk_-1" source="T5qcQMU3wxrCcpjOejp2-1" target="T5qcQMU3wxrCcpjOejp2-3" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="T5qcQMU3wxrCcpjOejp2-1" value="HTTP Request" style="whiteSpace=wrap;html=1;rounded=1;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#21C0A5;sketch=0;" parent="WgefTIiT7AgqmnGOStk_-1" vertex="1">
-          <mxGeometry x="300" y="160" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="T5qcQMU3wxrCcpjOejp2-3" value="Web Server&lt;br&gt;www.xxx.com" style="whiteSpace=wrap;html=1;rounded=1;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#21C0A5;sketch=0;" parent="WgefTIiT7AgqmnGOStk_-1" vertex="1">
-          <mxGeometry x="500" y="160" width="120" height="60" as="geometry" />
+        <mxCell id="FBrn5-EbwO3bm5AI7kZ5-0" value="IaaS" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;fillColor=none;" vertex="1" parent="WgefTIiT7AgqmnGOStk_-1">
+          <mxGeometry x="220" y="270" width="140" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
