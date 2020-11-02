@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-11-02T03:05:08.444Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="gLedlg2yiBfdvzMryUS7" version="13.8.8" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2020-11-02T09:17:37.108Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="7cXrwNEq7OQ8K0JDWctQ" version="13.8.8" type="github" pages="4">
   <diagram id="h-QXYd1HctZo2Xr5YikN" name="local">
-    <mxGraphModel grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" page="1" fold="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1065" dy="656" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -55,6 +55,9 @@
         <mxCell id="isx5sUggE16lWCnbfGK9-3" value="User Layer" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="315" y="311.5" width="120" height="37" as="geometry" />
         </mxCell>
+        <mxCell id="T4pqEkE_ISK7TvFwVSz0-1" value="" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/internet_cloud.svg;rounded=0;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="330" y="540" width="50" height="31.5" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
@@ -67,7 +70,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="yjDQa0-lEQCmhNaxIRpW" name="local-instance">
-    <mxGraphModel dx="1065" dy="599" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1065" dy="656" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="6vIk-0_0GE7erLyziwpx-0" />
         <mxCell id="6vIk-0_0GE7erLyziwpx-1" parent="6vIk-0_0GE7erLyziwpx-0" />
@@ -97,6 +100,17 @@
         </mxCell>
         <mxCell id="6vIk-0_0GE7erLyziwpx-13" value="Enviroment&lt;br&gt;Layer" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="6vIk-0_0GE7erLyziwpx-1">
           <mxGeometry x="515" y="610" width="70" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="9gKp6pcTVLDg25w-rMXb" name="Page-4">
+    <mxGraphModel dx="1065" dy="656" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="wTxX-84xGvmIHkBUcNd0-0" />
+        <mxCell id="wTxX-84xGvmIHkBUcNd0-1" parent="wTxX-84xGvmIHkBUcNd0-0" />
+        <mxCell id="wTxX-84xGvmIHkBUcNd0-2" value="" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/internet_cloud.svg;rounded=0;fillColor=none;" vertex="1" parent="wTxX-84xGvmIHkBUcNd0-1">
+          <mxGeometry x="410" y="430" width="50" height="31.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
