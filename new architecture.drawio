@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-11-02T02:55:22.438Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="T0aABgfSmadDEUUxtW7V" version="13.8.8" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2020-11-02T02:57:50.992Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="hOW2Gu7GnL0zl6r9AWKG" version="13.8.8" type="github" pages="3">
   <diagram id="h-QXYd1HctZo2Xr5YikN" name="local">
-    <mxGraphModel dx="1065" dy="656" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" page="1" fold="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -59,7 +59,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="wgSSDijlNZBA8a-8Ddck" name="#2">
-    <mxGraphModel grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" page="1" fold="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1065" dy="599" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="1cQskenQi5b3R1db8J3e-0" />
         <mxCell id="1cQskenQi5b3R1db8J3e-1" parent="1cQskenQi5b3R1db8J3e-0" />
@@ -67,20 +67,20 @@
     </mxGraphModel>
   </diagram>
   <diagram id="yjDQa0-lEQCmhNaxIRpW" name="local-instance">
-    <mxGraphModel dx="1065" dy="656" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1065" dy="599" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="6vIk-0_0GE7erLyziwpx-0" />
         <mxCell id="6vIk-0_0GE7erLyziwpx-1" parent="6vIk-0_0GE7erLyziwpx-0" />
         <mxCell id="6vIk-0_0GE7erLyziwpx-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="6vIk-0_0GE7erLyziwpx-1">
-          <mxGeometry x="295" y="460" width="530" height="280" as="geometry" />
+          <mxGeometry x="300" y="470" width="530" height="280" as="geometry" />
         </mxCell>
-        <mxCell id="6vIk-0_0GE7erLyziwpx-3" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;" vertex="1" parent="6vIk-0_0GE7erLyziwpx-1">
+        <mxCell id="6vIk-0_0GE7erLyziwpx-3" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;" vertex="1" parent="6vIk-0_0GE7erLyziwpx-1">
           <mxGeometry x="330" y="540" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6vIk-0_0GE7erLyziwpx-5" value="测量控制器(PC)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="6vIk-0_0GE7erLyziwpx-1">
+        <mxCell id="6vIk-0_0GE7erLyziwpx-5" value="Controller(PC)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="6vIk-0_0GE7erLyziwpx-1">
           <mxGeometry x="465" y="540" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6vIk-0_0GE7erLyziwpx-6" value="仪器" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="6vIk-0_0GE7erLyziwpx-1">
+        <mxCell id="6vIk-0_0GE7erLyziwpx-6" value="Instrument" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="6vIk-0_0GE7erLyziwpx-1">
           <mxGeometry x="690" y="540" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="6vIk-0_0GE7erLyziwpx-8" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="6vIk-0_0GE7erLyziwpx-1" source="6vIk-0_0GE7erLyziwpx-3" target="6vIk-0_0GE7erLyziwpx-5">
@@ -95,14 +95,11 @@
             <mxPoint x="690" y="569.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6vIk-0_0GE7erLyziwpx-11" value="non-network model" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="6vIk-0_0GE7erLyziwpx-1">
-          <mxGeometry x="320" y="380" width="120" height="16" as="geometry" />
+        <mxCell id="6vIk-0_0GE7erLyziwpx-12" value="Service Layer" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="6vIk-0_0GE7erLyziwpx-1">
+          <mxGeometry x="465" y="610" width="40" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="6vIk-0_0GE7erLyziwpx-12" value="服务层" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="6vIk-0_0GE7erLyziwpx-1">
-          <mxGeometry x="470" y="610" width="40" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="6vIk-0_0GE7erLyziwpx-13" value="环境层" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="6vIk-0_0GE7erLyziwpx-1">
-          <mxGeometry x="540" y="610" width="40" height="100" as="geometry" />
+        <mxCell id="6vIk-0_0GE7erLyziwpx-13" value="Enviroment&lt;br&gt;Layer" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="6vIk-0_0GE7erLyziwpx-1">
+          <mxGeometry x="515" y="610" width="70" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
